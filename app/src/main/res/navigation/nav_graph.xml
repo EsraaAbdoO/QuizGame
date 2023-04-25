@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.todo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_questionOneFragment"
+            app:destination="@id/questionOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionOneFragment"
+        android:name="com.example.todo.QuestionOneFragment"
+        android:label="fragment_question_one"
+        tools:layout="@layout/fragment_question_one" >
+        <action
+            android:id="@+id/action_questionOneFragment_to_questionTwoFragment"
+            app:destination="@id/questionTwoFragment" />
+        <action
+            android:id="@+id/action_questionOneFragment_to_wrongAnswerFragment"
+            app:destination="@id/wrongAnswerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congrateFragment"
+        android:name="com.example.todo.CongrateFragment"
+        android:label="fragment_congrate"
+        tools:layout="@layout/fragment_congrate" >
+        <action
+            android:id="@+id/action_congrateFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionTwoFragment"
+        android:name="com.example.todo.QuestionTwoFragment"
+        android:label="fragment_question_two"
+        tools:layout="@layout/fragment_question_two" >
+        <action
+            android:id="@+id/action_questionTwoFragment_to_CongrateFragment"
+            app:destination="@id/congrateFragment" />
+        <action
+            android:id="@+id/action_questionTwoFragment_to_wrongAnswerFragment"
+            app:destination="@id/wrongAnswerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrongAnswerFragment"
+        android:name="com.example.todo.WrongAnswerFragment"
+        android:label="fragment_wrong_answer"
+        tools:layout="@layout/fragment_wrong_answer" >
+        <action
+            android:id="@+id/action_wrongAnswerFragment_to_questionOneFragment"
+            app:destination="@id/questionOneFragment" />
+    </fragment>
+</navigation>
