@@ -17,13 +17,12 @@ class QuestionOneFragment : Fragment() {
         binding = FragmentQuestionOneBinding.inflate(inflater, container, false)
         val view = binding.root
         binding.radioGroup1.setOnCheckedChangeListener{ _, checkedId ->
-            when(checkedId){
-                R.id.radioButton1 ->
-                    binding.textView2.text ="correct answer"
-                R.id.radioButton2 -> findNavController().navigate(QuestionOneFragmentDirections.actionQuestionOneFragmentToWrongAnswerFragment())
-            }
             binding.buttonNext1.setOnClickListener {
-                findNavController().navigate(QuestionOneFragmentDirections.actionQuestionOneFragmentToQuestionTwoFragment()) }
+                when (checkedId) {
+                    R.id.radioButton1 -> findNavController().navigate(QuestionOneFragmentDirections.actionQuestionOneFragmentToQuestionTwoFragment())
+                    R.id.radioButton2 -> findNavController().navigate(QuestionOneFragmentDirections.actionQuestionOneFragmentToWrongAnswerFragment())
+                }
+            }
         }
         return view
     }

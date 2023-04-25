@@ -18,12 +18,11 @@ class QuestionTwoFragment : Fragment() {
         binding = FragmentQuestionTwoBinding.inflate(inflater, container, false)
         val view = binding.root
         binding.radioGroup2.setOnCheckedChangeListener{ _, checkedId2 ->
-            when(checkedId2){
-                R.id.radioButton3 -> binding.textView3.text ="correct answer"
-                R.id.radioButton4 -> findNavController().navigate(QuestionTwoFragmentDirections.actionQuestionTwoFragmentToWrongAnswerFragment())
-            }
             binding.buttonNext2.setOnClickListener {
-                findNavController().navigate(QuestionTwoFragmentDirections.actionQuestionTwoFragmentToCongrateFragment())
+                when(checkedId2){
+                R.id.radioButton3 ->  findNavController().navigate(QuestionTwoFragmentDirections.actionQuestionTwoFragmentToCongrateFragment())
+                R.id.radioButton4 -> findNavController().navigate(QuestionTwoFragmentDirections.actionQuestionTwoFragmentToWrongAnswerFragment())
+                }
             }
         }
         return view
