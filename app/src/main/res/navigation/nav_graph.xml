@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_questionOneFragment"
-            app:destination="@id/questionOneFragment" />
+            app:destination="@id/questionOneFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/questionOneFragment"
@@ -21,10 +25,18 @@
         tools:layout="@layout/fragment_question_one" >
         <action
             android:id="@+id/action_questionOneFragment_to_questionTwoFragment"
-            app:destination="@id/questionTwoFragment" />
+            app:destination="@id/questionTwoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_questionOneFragment_to_wrongAnswerFragment"
-            app:destination="@id/wrongAnswerFragment" />
+            app:destination="@id/wrongAnswerFragment"
+            app:enterAnim="@anim/from_top"
+            app:exitAnim="@anim/to_bottom"
+            app:popEnterAnim="@anim/from_bottom"
+            app:popExitAnim="@anim/to_top" />
     </fragment>
     <fragment
         android:id="@+id/congrateFragment"
@@ -33,7 +45,11 @@
         tools:layout="@layout/fragment_congrate" >
         <action
             android:id="@+id/action_congrateFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
     </fragment>
     <fragment
         android:id="@+id/questionTwoFragment"
@@ -42,10 +58,18 @@
         tools:layout="@layout/fragment_question_two" >
         <action
             android:id="@+id/action_questionTwoFragment_to_CongrateFragment"
-            app:destination="@id/congrateFragment" />
+            app:destination="@id/congrateFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_questionTwoFragment_to_wrongAnswerFragment"
-            app:destination="@id/wrongAnswerFragment" />
+            app:destination="@id/wrongAnswerFragment"
+            app:enterAnim="@anim/from_top"
+            app:exitAnim="@anim/to_bottom"
+            app:popEnterAnim="@anim/from_bottom"
+            app:popExitAnim="@anim/to_top" />
     </fragment>
     <fragment
         android:id="@+id/wrongAnswerFragment"
@@ -54,6 +78,10 @@
         tools:layout="@layout/fragment_wrong_answer" >
         <action
             android:id="@+id/action_wrongAnswerFragment_to_questionOneFragment"
-            app:destination="@id/questionOneFragment" />
+            app:destination="@id/questionOneFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_top" />
     </fragment>
 </navigation>
