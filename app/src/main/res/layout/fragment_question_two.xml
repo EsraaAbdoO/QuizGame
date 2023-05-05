@@ -10,8 +10,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="three or four ?"
-        android:textSize="30dp"
+        android:text="@string/three_or_four"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
@@ -32,15 +32,15 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="three"
-            android:textSize="30dp" />
+            android:text="@string/three"
+            android:textSize="30sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="four"
-            android:textSize="30dp" />
+            android:text="@string/four"
+            android:textSize="30sp" />
     </RadioGroup>
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -65,8 +65,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="152dp"
         android:backgroundTint="#12909A"
-        android:text="next question"
-        android:textSize="20dp"
+        android:text="@string/next_question"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

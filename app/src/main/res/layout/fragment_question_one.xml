@@ -7,11 +7,10 @@
     tools:context=".QuestionOneFragment">
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="one or two ?"
-        android:textSize="30dp"
+        android:text="@string/one_or_two"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
@@ -32,15 +31,15 @@
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="one"
-            android:textSize="30dp" />
+            android:text="@string/one"
+            android:textSize="30sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="two"
-            android:textSize="30dp" />
+            android:text="@string/two"
+            android:textSize="30sp" />
     </RadioGroup>
 
     <TextView
@@ -51,7 +50,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -65,8 +64,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="152dp"
         android:backgroundTint="#12909A"
-        android:text="next question"
-        android:textSize="20dp"
+        android:text="@string/next_question"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
